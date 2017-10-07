@@ -950,8 +950,24 @@
 		padding: 10px;
 	}
 	.fc-unthemed td.fc-today {
-		background: #ddd;
+		background: transparent;
+		color: rebeccapurple !important;
 	}
 	.fc-toolbar h2 {
 		line-height: 27px;
+	}
+	.fc-unthemed td.fc-today .fc-day-number:before {
+		content: '';
+		border-radius: 50%;
+		background: #ddd;
+		height: 30px;
+		width: 30px;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 4px;
+		z-index: -1;
+	}
+	.fc-day-grid-event .fc-time {
+		display: none;
 	}

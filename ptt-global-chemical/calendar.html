@@ -24,13 +24,13 @@
 					<div class="sidebar">
 						<div class="event-date"><span class="date">08</span> March 2016</div>
 
-						<a class="box">
+						<a class="box" href="calendar-detail.html">
 							<img class="block" src="images/event1.jpg">
 							<strong class="event-title">Nemo enim ipsam voluptatem qudit fugit.</strong>
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
 						</a>
 
-						<a class="box">
+						<a class="box" href="calendar-detail.html">
 							<img class="block" src="images/event1.jpg">
 							<strong class="event-title">Nemo enim ipsam voluptatem qudit fugit.</strong>
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -59,11 +59,64 @@
 			$.getScript('./js/moment.min.js', function(){
 				$.getScript('./js/fullcalendar.min.js', function(data){
 					$(function(){
+						var date = new Date()
+						var d = date.getDate()
+						var m = date.getMonth()
+						var y = date.getFullYear()
+
 						$('#calendar-f').fullCalendar({
 							header: {
 								left: 'prev, title, next',
 								center: '',
 								right: ''
+							},
+							events: [{
+								title: 'Career Talk',
+								start: new Date(y, m, 21),
+								color: '#78be2a'
+							}, {
+								title: 'Live Chart',
+								start: new Date(y, m, 22),
+								color: '#f15700'
+							}, {
+								title: 'GC Opening House',
+								start: new Date(y, m, 24),
+								color: '#1e64ba'
+							}, {
+								title: 'Career Day',
+								start: new Date(y, m, 27),
+								color: '#b242e2'
+							}, {
+								title: 'Career Talk',
+								start: new Date(y, m, 12),
+								color: '#78be2a'
+							}, {
+								title: 'Live Chart',
+								start: new Date(y, m, 16),
+								color: '#f15700'
+							}, {
+								title: 'GC Opening House',
+								start: new Date(y, m, 17),
+								color: '#1e64ba'
+							}, {
+								title: 'Career Day',
+								start: new Date(y, m, 30),
+								color: '#b242e2'
+							}, {
+								title: 'Career Talk',
+								start: new Date(y, m, 30),
+								color: '#78be2a'
+							}, {
+								title: 'Live Chart',
+								start: new Date(y, m, 30),
+								color: '#f15700'
+							}, {
+								title: 'GC Opening House',
+								start: new Date(y, m, 21),
+								color: '#1e64ba'
+							}],
+							eventClick: function(calEvent, jsEvent, view) {
+								window.location.href = 'calendar-detail.html'
 							}
 						})
 					})
@@ -71,5 +124,6 @@
 			})
 		})
 	</script>
+	<script src="tmp/dev.js"></script>
 </body>
 </html>
