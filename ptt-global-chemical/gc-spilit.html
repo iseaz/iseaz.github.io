@@ -20,7 +20,7 @@
 				<h2 class="section-heading light-blue">gc spilit &  <strong>4 core behaviors</strong></h2>
 				<img src="images/gc-spilit-tag.png" class="tag">
 
-				<div class="gallery r1 row">
+				<!-- <div class="gallery r1 row">
 					<a><img src="images/gcs1.jpg"></a>
 					<a><img src="images/gcs2.jpg"></a>
 					<a><img src="images/gcs3.jpg"></a>
@@ -42,11 +42,40 @@
 					<a><img src="images/gcs10.jpg"></a>
 					<a><img src="images/gcs11.jpg"></a>
 					<a><img src="images/gcs12.jpg"></a>
+				</div> -->
+
+				<ul class="grid row">
+					<li>
+						<a onclick="loadContentGSDetail('gc-spilit-detail.html', this);">
+							<img class="block" src="images/gc-thumb-r1-m.png">
+						</a>
+					</li>
+					<li>
+						<a onclick="loadContentGSDetail('gc-spilit-detail.html', this);">
+							<img class="block" src="images/gc-thumb-r2-m.png">
+						</a>
+					</li>
+					<li>
+						<a onclick="loadContentGSDetail('gc-spilit-detail.html', this);">
+							<img class="block" src="images/gc-thumb-r3-m.png">
+						</a>
+					</li>
+					<li>
+						<a onclick="loadContentGSDetail('gc-spilit-detail.html', this);">
+							<img class="block" src="images/gc-thumb-r4-m.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="gs-detail">
+				<div class="wrap-center row relative">
+					<a class="close" onclick="closeGSDetail()"><i class="fa fa-times"></i></a>
+
+					<div class="row append-content"></div>
 				</div>
 			</div>
 		</div> <!-- end gc spilit -->
-
-		<br>
 	</div>
 
 	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
