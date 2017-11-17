@@ -1,5 +1,5 @@
-let CACHE_STATIC_NAME = 'static-v1'
-let CACHE_DYNAMIC_NAME = 'dynamic-v1'
+let CACHE_STATIC_NAME = 'static-v2'
+let CACHE_DYNAMIC_NAME = 'dynamic-v2'
 let STATIC_FILES = [
 	'/pwa',
 	'/pwa/index.html',
